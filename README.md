@@ -159,7 +159,7 @@ male/mixed posts and trims females down to the highest-scoring ones. adjust
 
 ## etiquette
 
-- 1 req per ~1s per host, enforced in `http_client.py`. don't disable it, you'll
+- 1 req per ~2s per host, enforced in `http_client.py`. don't disable it, you'll
   get ip-banned and ruin it for the rest of us.
 - retries with backoff on 429/5xx are built in.
 - total runtime for ~10k is a few hours. go touch grass.

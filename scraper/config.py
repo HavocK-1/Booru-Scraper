@@ -167,7 +167,7 @@ GELBOORU = SourceConfig(
     base_url="https://gelbooru.com/index.php?page=dapi&s=post&q=index",
     tags=CORE_TAGS,            # fat, fat_man, obese, bbw, bbm
     page_size=100,
-    min_delay_s=1.0,           # ~1 req/s (PLAN.md §6)
+    min_delay_s=2.0,           # ~1 req/s (PLAN.md §6)
     sort_token="sort:score:desc",
     score_field="score",
     md5_field="md5",
@@ -180,7 +180,7 @@ DANBOORU = SourceConfig(
     base_url="https://danbooru.donmai.us/posts.json",
     tags=CORE_TAGS,
     page_size=100,
-    min_delay_s=1.0,           # 1 req/s anonymous (PLAN.md §6)
+    min_delay_s=2.0,           # 1 req/s anonymous (PLAN.md §6)
     # Danbooru exposes `order:score` and `order:favcount` as tag tokens.
     # fav_count is cleaner (no downvote noise) — PLAN.md §2.
     sort_token="order:favcount",
@@ -203,7 +203,7 @@ RULE34 = SourceConfig(
     base_url="https://api.rule34.xxx/index.php?page=dapi&s=post&q=index",
     tags=CORE_TAGS,
     page_size=100,
-    min_delay_s=1.0,           # ~1 req/s (PLAN.md §6)
+    min_delay_s=2.0,           # ~1 req/s (PLAN.md §6)
     sort_token="sort:score:desc",
     score_field="score",
     md5_field="md5",
