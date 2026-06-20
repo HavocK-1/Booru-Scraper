@@ -1,0 +1,4 @@
+# Scraper dependencies.
+# Python 3.10+ (uses `str | None` union syntax and dataclasses).
+requests>=2.31
+Pillow>=10.0          # downscaling saved images to MAX_SAVE_DIM
